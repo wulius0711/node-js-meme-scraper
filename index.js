@@ -38,9 +38,9 @@ const websiteCode = website.data;
 const text = websiteCode;
 const urls = extractUrls(text);
 
-for (let i = 1; i <= 10; i++) {
-  urls.push(i);
-}
+// for (let i = 1; i <= 10; i++) {
+//   urls.push(i);
+// }
 
 const jpgs = urls.filter((name) => name.includes('images'));
 
@@ -52,9 +52,9 @@ const tenOriginalJpgs = originalJpgs.slice(0, 10);
 
 console.log(tenOriginalJpgs);
 
-for (let i = 1; i <= 10; i++) {}
+// for (let i = 1; i <= 10; i++) {}
 
-const stream = fs.createWriteStream('01.jpg');
+const stream = fs.createWriteStream('02.jpg');
 
 const request = https.get(
   'https://api.memegen.link/images/bad/your_meme_is_bad/and_you_should_feel_bad.jpg?width=300',
